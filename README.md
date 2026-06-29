@@ -1,3 +1,6 @@
+[![NuGet Version](https://img.shields.io/nuget/v/NcCache.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/NcCache/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/NcCache.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/NcCache/)
+
 # NcCache
 High-performance, multi-threaded, content-addressable caching engine for C#.
 
@@ -13,10 +16,16 @@ All state is managed by the `NcCacheEngine`, which orchestrates background threa
 
 ## Installation
 
+### Manual
 Copy the `.cs` files into your C# project. 
 
 > [!WARNING]
 > The library requires **.NET 8 or later** due to its reliance on `System.IO.Hashing` (`XxHash3`, `XxHash128`) and modern `Span<T>` / `Memory<T>` primitives.
+
+### .NET CLI
+```bash
+dotnet add package NcCache
+```
 
 ## Usage
 
