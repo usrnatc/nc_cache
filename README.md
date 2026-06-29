@@ -1,5 +1,4 @@
 [![NuGet Version](https://img.shields.io/nuget/v/NcCache.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/NcCache/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/NcCache.svg?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/NcCache/)
 
 # NcCache
 High-performance, multi-threaded, content-addressable caching engine for C#.
