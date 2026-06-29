@@ -16,6 +16,7 @@ All state is managed by the `NcCacheEngine`, which orchestrates background threa
 ## Performance Benchmarks
 
 NcCache delivers exceptional performance on modern hardware, achieving near-theoretical maximum throughput with minimal overhead.
+The Linux stats are obviously lower as I do not have both operating systems installed on the same machine. Take these stats with that in mind.
 
 ### Benchmark Environment
 - **Windows**: AMD Ryzen 9 7950X (32 cores @ 5.85 GHz), .NET 10.0.4
