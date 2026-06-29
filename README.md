@@ -62,13 +62,6 @@ NcCache delivers exceptional performance on modern hardware, achieving near-theo
 - **Concurrent correctness**: Zero corruption detected across 46M+ reads under write stress
 - **File change detection**: 2-30ms latency (platform dependent)
 
-### Understanding the Numbers
-
-The `ReadFileSync` operation combines:
-- **Hash calculation**: 6.6 ns (40-char path) + 74.7 ns (4KB data)
-- **Lock acquisition**: 4.3 ns per Stripe operation
-- **Access lifecycle**: 10.0 ns per Open/Dispose cycle
-
 ## Installation
 
 ### Manual
