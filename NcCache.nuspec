@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>NcCache</id>
+        <version>1.0.0</version>
+        <title>NcCache</title>
+        <authors>usrnatc</authors>
+        <owners>usrnatc</owners>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/usrnatc/NcCache</projectUrl>
+        <description>
+            NcCache is a C# library for caching file data and objects using content-addressable storage. 
+            It is designed for high concurrency and low overhead, utilizing striped reader-writer locks, background worker threads (Lanes), 
+            and reference-counted eviction.
+
+            The engine consists of three main layers:
+            - ContentCache: A content-addressable data store mapping 128-bit hashes to byte arrays.
+            - FileStreamCache: A file caching layer that detects file modifications and provides fast-path lookups.
+            - ObjectCache<T>: A generic object cache with generation tracking and asynchronous request processing.
+
+            All state is managed by the `NcCacheEngine`, which orchestrates background threads to process cache requests, 
+            evict expired blobs, and detect file changes without blocking the main application.
+        </description>
+        <tags>cache file-cache content-addressable thread-safe high-performance</tags>
+        <repository type="git" url="https://github.com/usrnatc/NcCache"/>
+        <dependencies>
+            <group targetFramework="net8.0">
+                <dependency id="System.IO.Hashing" version="8.0.0"/>
+            </group>
+        </dependencies>
+    </metadata>
+</package>
